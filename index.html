@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task3</title>
+  </head>
+  <body>
+    <script>
+      /*(1) write a program to print reverse of a number by using while loop*/
+       var a = "123";
+      s = "";
+      i = a.length - 1;
+      while (i >= 0) {
+        s = s + a[i];
+        i--;
+      }
+      console.log(s);
+    
+      /*(2) write a program to check whether input 2 is available in input1
+            input1: 108
+            input 2: 8
+            true
+            input 1: 535
+            input 2: 6
+            false
+    */
+      var a = "108";
+      var b = +prompt("enter a number:");
+
+      for (i in a) {
+        if (a[i] == b) {
+          console.log(true);
+        }
+      }
+      /*write a program to find out false */
+      
+      var a = 535;
+      
+      var b = +prompt("enter a number:");
+       rem = 0
+       val =0
+    
+      while(a > 0){
+        rem = a%10;
+        val = rem;
+        if(val = b)
+        {
+          console.log("yes")
+        }
+        else{
+          console.log("no")
+        }
+        a = a/10;
+        break
+      }
+   
+   /*3. write a program to check whether a number is even not by using switch statement*/
+     
+     switch(2)
+     {
+         case 2:console.log("even")
+         break;
+     
+     
+        case 1:console.log("odd")
+        break;
+     
+      default:console.log("not a number")
+     }
+     
+    </script>
+  </body>
+</html>
